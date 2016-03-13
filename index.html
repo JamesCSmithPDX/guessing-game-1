@@ -10,18 +10,22 @@
     <p>I work as an advertising photographer, currently managing a photography studio for a marketing company here in Portland. I became interested in photography at a young age. My earliest influence was my grandfather, who had a lifelong interest as an amateur photographer. My father, a graphic designer, gave me my first photo job photographing products for catalogs that he designed. After high school, I spent five years as a Navy photographer, where I traveled a lot, got married and finally returned home to Portland. After the Navy, I went to college, earning my bachelor's degree at PSU. My focus was fine arts and literature. After PSU I went to work as a photographer and then returned to school spending three years studing graphic design at PNCA. I have been working as an advertising photographer since.</p>
 
     <script type="text/javascript">
+    //First Question
       var questionOne = "Portland";
-      console.log("Ask the user where I'm from.");
+      var questionTwo = "PCC";
+      var questionThrdd = "Photographer";
       var guessIsCorrect = false;
-      var guess = prompt("Where am I from?");
+      console.log("Ask the user their name.")
+      var yourName = prompt("What is your name?");
+      console.log("Ask the user where I'm from.");
+      var guess = prompt("Nice to meet you "+yourName+"! Where am I from?");
       if (questionOne == guess) {
         guessIsCorrect = true;
       }
-      console.log("Compare the guessed number to ours.")
-      var yourName = prompt("Thank you for answering my first question, what is your name?");
-      var message = "Nice to meet you "+yourName+", you picked "+guess+".";
+      console.log("Compare the guess to ours.")
+      var message = "You picked "+guess+".";
       if (guessIsCorrect) {
-        message += " Yes, that's right!";
+        message += " Yes, that's right, "+yourName+" !";
       }else {
         message += " No, that's not where I'm from.";
       }
