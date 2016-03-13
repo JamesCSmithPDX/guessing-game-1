@@ -12,22 +12,48 @@
     <script type="text/javascript">
     //First Question
       var questionOne = "Portland";
-      var questionTwo = "PCC";
-      var questionThrdd = "Photographer";
+      var questionTwo = "PSU";
+      var questionThree = "Photographer";
       var guessIsCorrect = false;
       console.log("Ask the user their name.")
       var yourName = prompt("What is your name?");
       console.log("Ask the user where I'm from.");
-      var guess = prompt("Nice to meet you "+yourName+"! Where am I from?");
+      var guess = prompt("Nice to meet you, "+yourName+"! Where am I from?");
       if (questionOne == guess) {
         guessIsCorrect = true;
       }
       console.log("Compare the guess to ours.")
       var message = "You picked "+guess+".";
       if (guessIsCorrect) {
-        message += " Yes, that's right, "+yourName+" !";
+        message += " Yes, that's right, "+yourName+"! I have another question for you.";
       }else {
         message += " No, that's not where I'm from.";
+      }
+      alert(message);
+      console.log("Ask the user where I went to school.");
+      var guess = prompt("Where did I to to school?");
+      if (questionTwo == guess) {
+        guessIsCorrect = true;
+      }
+      console.log("Compare the guess to ours.")
+      var message = "You picked "+guess+".";
+      if (guessIsCorrect) {
+        message += " Yes, that's right, "+yourName+"! Let's try another question.";
+      }else {
+        message += " No, that's not where I went to school. Here's another question for you.";
+      }
+      alert(message);
+      console.log("Ask the user what my job is.");
+      var guess = prompt("What is my job?");
+      if (questionThree == guess) {
+        guessIsCorrect = true;
+      }
+      console.log("Compare the guess to ours.")
+      var message = "You picked "+guess+".";
+      if (guessIsCorrect) {
+        message += " Yes, that's right, "+yourName+"! Good show!";
+      }else {
+        message += " No, that's not my job. Thanks for playing!";
       }
       alert(message);
     </script>
