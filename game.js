@@ -12,6 +12,7 @@
   var yourName = prompt("What is your name?");
   console.log("Ask the user where I'm from.");
   //QuestionOne
+  //This questiion is working correctly and I need to recode my other questions to reflect these changes.
     var message = "You picked "+guess+".";
     var guess = prompt("Nice to meet you, "+yourName+"! My first question for you is: am I from Portland?");
   if (questionOne == guess.toLowerCase()) {
