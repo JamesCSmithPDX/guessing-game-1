@@ -2,8 +2,8 @@
   var questionOne = "Yes";//Am I from Portland?
   var questionTwo = "No";//Did I go to UofO?
   var questionThree = "Yes";//Am I a Photographer?
-  var QuestionFour = "No";//Was I in the Air Force?
-  var QuestionFive = "No";//Do I have a son?
+  var questionFour = "No";//Was I in the Air Force?
+  var questionFive = "No";//Do I have a son?
   var guessIsCorrect = false;
   //Ask their Name
   console.log("Ask the user their name.")
