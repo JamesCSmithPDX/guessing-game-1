@@ -1,9 +1,9 @@
 //First Question
-  var questionOne = "Yes";//Am I from Portland?
-  var questionTwo = "No";//Did I go to UofO?
-  var questionThree = "Yes";//Am I a Photographer?
-  var questionFour = "No";//Was I in the Air Force?
-  var questionFive = "No";//Do I have a son?
+  var questionOne = "yes";//Am I from Portland?
+  var questionTwo = "no";//Did I go to UofO?
+  var questionThree = "yes";//Am I a Photographer?
+  var questionFour = "no";//Was I in the Air Force?
+  var questionFive = "no";//Do I have a son?
   var guessIsCorrect = false;
   //Ask their Name
   console.log("Ask the user their name.")
@@ -11,7 +11,7 @@
   console.log("Ask the user where I'm from.");
   //QuestionOne
   var guess = prompt("Nice to meet you, "+yourName+"! My first question for you is: am I from Portland?");
-  if (questionOne == guess) {
+  if (questionOne == guess.toLowerCase()) {
     guessIsCorrect = true;
   }
   console.log("Compare the guess to ours.")
@@ -25,7 +25,7 @@
   //QuestionTwo
   console.log("Ask the user where I went to school.");
   var guess = prompt("Did I go to College at UofO?");
-  if (questionTwo == guess) {
+  if (questionTwo == guess.toLowerCase()) {
     guessIsCorrect = false;
   }
   console.log("Compare the guess to ours.")
@@ -39,7 +39,7 @@
   //QuestionThree
   console.log("Ask the user what my job is.");
   var guess = prompt("Am I a photographer?");
-  if (questionThree == guess) {
+  if (questionThree == guess.toLowerCase()) {
     guessIsCorrect = true;
   }
   console.log("Compare the guess to ours.")
@@ -47,14 +47,14 @@
   if (guessIsCorrect) {
     message += ", that's right, "+yourName+"! Good show!";
   }else {
-    message += " Sorry, I am a photographer. Thanks for playing!";
+    message += " Sorry, I am a photographer.";
   }
   alert(message);
 //QuestionFour
 console.log("Ask the user what service I was in.");
 var guess = prompt("Was I in the Air Force?");
-if (questionFour == guess) {
-  guessIsCorrect = false;
+if (questionFour == guess.toLowerCase()) {
+  guessIsCorrect = true;
 }
 console.log("Compare the guess to ours.")
 var message = "You picked "+guess+".";
@@ -67,8 +67,8 @@ alert(message);
 //QuestionFive
 console.log("Ask the user if I have a son.");
 var guess = prompt("Do I have a son?");
-if (questionFive == guess) {
-  guessIsCorrect = false;
+if (questionFive == guess.toLowerCase()) {
+  guessIsCorrect = true;
 }
 console.log("Compare the guess to ours.")
 var message = "You picked "+guess+".";
