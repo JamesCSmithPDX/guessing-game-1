@@ -1,77 +1,83 @@
-//First Question
   var questionOne = "yes";//Am I from Portland?
   var questionTwo = "no";//Did I go to UofO?
   var questionThree = "yes";//Am I a Photographer?
   var questionFour = "no";//Was I in the Air Force?
-  //var questionFive = "no";//Do I have a son?
   var guessesCorrect = 0;
+
   console.log("start");
   console.log(guessesCorrect);
   //Ask their Name
   console.log("Ask the user their name.")
+
   var yourName = prompt("What is your name?");
   console.log("Ask the user where I'm from.");
+
   //QuestionOne
-  //This questiion is working correctly and I need to recode my other questions to reflect these changes.
-    var message = "You picked "+guess+".";
-    var guess = prompt("Nice to meet you, "+yourName+"! My first question for you is: am I from Portland?");
+    var guess = prompt("Nice to meet you, "+yourName+"! Answer me this; am I from Portland?");
+      var message = "You picked "+guess+".";
   if (questionOne == guess.toLowerCase()) {
     guessesCorrect += 1;
-    message += " That's right, "+yourName+", I am from Portland! I have another question for you.";
+    message += " That's right, I am from Portland! I have another question for you.";
   }else {
-    message += " I'm sorry, that's not correct, I'm from Portland.";
+    message += " I'm sorry, I'm from Portland.";
   }
   console.log("Compare the guess to ours.")
   alert(message);
+
   console.log(guessesCorrect);
+
   //QuestionTwo
-  var message = "You picked "+guess+".";
   var guess = prompt("Did I go to UofO?");
+  var message = "You picked "+guess+".";
 if (questionTwo == guess.toLowerCase()) {
   guessesCorrect += 1;
-  message += " That's right, "+yourName+", I didn't go to UofO, I went to PSU.";
+  message += " That's right, I went to PSU.";
 }else {
-  message += " I'm sorry, that's not correct, I went to PSU.";
+  message += " I'm sorry, but I went to PSU.";
 }
 console.log("Compare the guess to ours.")
 alert(message);
+
 console.log(guessesCorrect);
+
 //QuestionThree
-var message = "You picked "+guess+".";
 var guess = prompt("Am I a photographer?");
+var message = "You picked "+guess+".";
 if (questionThree == guess.toLowerCase()) {
 guessesCorrect += 1;
-message += " That's right, "+yourName+", I am from Photographer! I have another question for you.";
+message += " That's right, I am from Photographer! I have another question for you.";
 }else {
-message += " I'm sorry, that's not correct, I'm a photographer.";
+message += " I'm sorry no, I'm a photographer.";
 }
 console.log("Compare the guess to ours.")
 alert(message);
+
 console.log(guessesCorrect);
+
 //QuestionFour
-var message = "You picked "+guess+".";
 var guess = prompt("Was I in the Air Force?");
+var message = "You picked "+guess+".";
 if (questionFour == guess.toLowerCase()) {
 guessesCorrect += 1;
-message += " That's right, "+yourName+", I wasn't! I was in the Navy.";
+message += " That's right! I was in the Navy.";
 }else {
-message += " I'm sorry, that's not correct, I was in the Navy.";
+message += " I'm sorry, no, I was in the Navy.";
 }
 console.log("Compare the guess to ours.")
 alert(message);
+
 console.log(guessesCorrect);
+
 //Final Question
-console.log(guessIsCorrect);
+console.log(guessesCorrect);
 console.log("How many questions did I get correct?");
 var guess = parseInt(prompt("How many questions did I get correct?"));
-if (guess == guessIsCorrect) {
-guessIsCorrect == true;
-}
+
 console.log("Compare the guess to ours.")
 var message = "You picked "+guess+".";
-if (guessIsCorrect) {
-  message += ", that's right, "+yourName+"! Good show!";
+if (guessesCorrect == guess) {
+  message += ", that's right, good show!";
 }else {
-  message += " Sorry, that's not correct. Thanks for playing!";
+  message += " Sorry no, but thanks for playing!";
 }
 alert(message);
