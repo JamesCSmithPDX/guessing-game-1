@@ -9,53 +9,6 @@
     <p>A great many years ago, I was born in Portland. Other than five years in the Navy, I've lived here all of my life.</p>
     <p>I work as an advertising photographer, currently managing a photography studio for a marketing company here in Portland. I became interested in photography at a young age. My earliest influence was my grandfather, who had a lifelong interest as an amateur photographer. My father, a graphic designer, gave me my first photo job photographing products for catalogs that he designed. After high school, I spent five years as a Navy photographer, where I traveled a lot, got married and finally returned home to Portland. After the Navy, I went to college, earning my bachelor's degree at PSU. My focus was fine arts and literature. After PSU I went to work as a photographer and then returned to school spending three years studing graphic design at PNCA. I have been working as an advertising photographer since.</p>
 
-    <script type="text/javascript">
-    //First Question
-      var questionOne = "Portland";
-      var questionTwo = "PSU";
-      var questionThree = "Photographer";
-      var guessIsCorrect = false;
-      console.log("Ask the user their name.")
-      var yourName = prompt("What is your name?");
-      console.log("Ask the user where I'm from.");
-      var guess = prompt("Nice to meet you, "+yourName+"! Where am I from?");
-      if (questionOne == guess) {
-        guessIsCorrect = true;
-      }
-      console.log("Compare the guess to ours.")
-      var message = "You picked "+guess+".";
-      if (guessIsCorrect) {
-        message += " Yes, that's right, "+yourName+"! I have another question for you.";
-      }else {
-        message += " No, that's not where I'm from.";
-      }
-      alert(message);
-      console.log("Ask the user where I went to school.");
-      var guess = prompt("Where did I to to school?");
-      if (questionTwo == guess) {
-        guessIsCorrect = true;
-      }
-      console.log("Compare the guess to ours.")
-      var message = "You picked "+guess+".";
-      if (guessIsCorrect) {
-        message += " Yes, that's right, "+yourName+"! Let's try another question.";
-      }else {
-        message += " No, that's not where I went to school. Here's another question for you.";
-      }
-      alert(message);
-      console.log("Ask the user what my job is.");
-      var guess = prompt("What is my job?");
-      if (questionThree == guess) {
-        guessIsCorrect = true;
-      }
-      console.log("Compare the guess to ours.")
-      var message = "You picked "+guess+".";
-      if (guessIsCorrect) {
-        message += " Yes, that's right, "+yourName+"! Good show!";
-      }else {
-        message += " No, that's not my job. Thanks for playing!";
-      }
-      alert(message);
-    </script>
+    <script type="text/javascript" src="game.js"></script>
   </body>
 </html>
