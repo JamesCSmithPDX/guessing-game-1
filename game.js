@@ -3,11 +3,12 @@ function askQuestion(question, answer) {
 
   if (guess.toLowerCase() == answer.toLowerCase()){
     alert("Congratualtions! You are correct.");
-    return true;
+//    return true;
   } else {
     alert("sorry. Good try, though.");
-    return false;
+//    return false;
   }
+  document.getElementById("guess").innerHTML += "<br>"+question+" - "+answer;
 };
 askQuestion("Am I from Portland?","yes");
 askQuestion("Did I go to UofO?","no");
@@ -15,7 +16,7 @@ askQuestion("Am I a Photographer?","yes");
 askQuestion("Was I in the Air Force?","no");
 
 
-document.getElementById("guess").innerHTML = guess;
+
 
 
 
