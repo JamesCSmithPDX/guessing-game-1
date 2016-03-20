@@ -1,7 +1,8 @@
 function askQuestion(question, answer) {
   var guess = prompt(question);
-  if (guess.toLowerCase() == answer.tolowercase()){
-    alert("congratualtions! You are correct.");
+
+  if (guess.toLowerCase() == answer.toLowerCase()){
+    alert("Congratualtions! You are correct.");
     return true;
   } else {
     alert("sorry. Good try, though.");
@@ -20,7 +21,7 @@ document.getElementById("guess").innerHTML = guess;
 
 
 
-  var questionOne = "yes";//Am I from Portland?
+//   var questionOne = "yes";//Am I from Portland?
 //   var questionTwo = "no";//Did I go to UofO?
 //   var questionThree = "yes";//Am I a Photographer?
 //   var questionFour = "no";//Was I in the Air Force?
