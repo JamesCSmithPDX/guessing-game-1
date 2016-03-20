@@ -3,9 +3,11 @@ function askQuestion(question, answer) {
 
   if (guess.toLowerCase() == answer.toLowerCase()){
     alert("Congratualtions! You are correct.");
+    document.getElementById("face").innerHTML = "<img src='images/happy-face_200.jpg'>";
 //    return true;
   } else {
     alert("sorry. Good try, though.");
+    document.getElementById("face").innerHTML = "<img src='images/sad-face_200.jpg'>";
 //    return false;
   }
   document.getElementById("guess").innerHTML += "<br>"+question+" - "+answer;
